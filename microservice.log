@@ -1,0 +1,46 @@
+2018-12-19 10:45:21,211 INFO  [main] PatientManagementApp: Starting PatientManagementApp on rishi-ThinkPad-T440p with PID 5183 (/home/rishi/erx/patientmanagement_service/target/classes started by rishi in /home/rishi/erx/patientmanagement_service)
+2018-12-19 10:45:21,226 DEBUG [main] PatientManagementApp: Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2018-12-19 10:45:21,227 INFO  [main] PatientManagementApp: The following profiles are active: swagger,dev
+2018-12-19 10:45:24,417 DEBUG [main] AsyncConfiguration: Creating Async Task Executor
+2018-12-19 10:45:26,068 DEBUG [localhost-startStop-1] WebConfigurer: Registering CORS filter
+2018-12-19 10:45:26,196 INFO  [localhost-startStop-1] WebConfigurer: Web application configuration, using profiles: swagger
+2018-12-19 10:45:26,211 INFO  [localhost-startStop-1] WebConfigurer: Web application fully configured
+2018-12-19 10:45:32,528 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,536 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,596 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,601 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,608 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,613 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,618 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,623 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,629 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,659 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,665 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,670 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,676 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:32,681 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,008 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,031 WARN  [main] HqlSqlWalker: with-clause expressions do not reference the from-clause element to which the with-clause was associated.  The query may not work as expected [select ip from com.erx.microservice.patientmanagement.domain.IpAdmission ip inner join ip.patient p with trim(upper(ip.ipAdmissionStatus)) = 'DISCHARGED' where p.id = ?1 and p.clinic.id = ?2 and p.patientAdditionalDetail.patientType IS not NULL and p.recordStatus = 1 and ip.recordStatus = 1]
+2018-12-19 10:45:34,031 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,039 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,048 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,052 WARN  [main] HqlSqlWalker: with-clause expressions do not reference the from-clause element to which the with-clause was associated.  The query may not work as expected [select btm.id,btm.bedTypeName from com.erx.microservice.patientmanagement.domain.IpAdmission ip Join ip.patient p  Join ip.bedMaster bm join bm.bedTypeMaster btm with trim(upper(ip.ipAdmissionStatus)) != 'DISCHARGED' where p.id = ?1  and ip.recordStatus = 1]
+2018-12-19 10:45:34,053 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,058 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:34,063 WARN  [main] TemplateRenderer: HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2018-12-19 10:45:38,758 DEBUG [main] RestTemplateConfig: Registering RestTemplate
+2018-12-19 10:45:41,619 INFO  [main] PatientManagementApp: Started PatientManagementApp in 22.118 seconds (JVM running for 22.696)
+2018-12-19 10:45:41,619 INFO  [main] PatientManagementApp: 
+----------------------------------------------------------
+	Application 'Dev-Patient-Management-Service' is running! Access URLs:
+	Local: 		http://localhost:9091
+	External: 	http://127.0.1.1:9091
+	Profile(s): 	[swagger, dev]
+----------------------------------------------------------
+2018-12-19 10:46:18,935 DEBUG [http-nio-9091-exec-3] LoggingAspect: Enter: com.erx.microservice.patientmanagement.web.rest.ReferralPatientMasterController.getReferralPatientMasters() with argument[s] = [30]
+2018-12-19 10:46:18,948 DEBUG [http-nio-9091-exec-3] ReferralPatientMasterController: REST request to get All ReferralPatientMasters for given clinicLocationId
+2018-12-19 10:46:18,949 DEBUG [http-nio-9091-exec-3] LoggingAspect: Enter: com.erx.microservice.patientmanagement.service.referralpatientmaster.getreferralpatientmaster.GetReferralPatientMasterService.execute() with argument[s] = [com.erx.microservice.patientmanagement.service.referralpatientmaster.getreferralpatientmaster.GetReferralPatientMasterServiceRequest@374afbaf]
+2018-12-19 10:46:18,949 DEBUG [http-nio-9091-exec-3] GetReferralPatientMasterServiceImpl: call to retrieve ReferralPatientMaster
+2018-12-19 10:46:23,412 DEBUG [http-nio-9091-exec-3] GetReferralPatientMasterServiceImpl: ReferralPatientMaster is  retrieved successfully for 30 clinicLocationID
+2018-12-19 10:46:23,412 DEBUG [http-nio-9091-exec-3] LoggingAspect: Exit: com.erx.microservice.patientmanagement.service.referralpatientmaster.getreferralpatientmaster.GetReferralPatientMasterService.execute() with result = com.erx.microservice.patientmanagement.service.referralpatientmaster.getreferralpatientmaster.GetReferralPatientMasterServiceResponse@3e10439f
+2018-12-19 10:46:23,413 DEBUG [http-nio-9091-exec-3] LoggingAspect: Exit: com.erx.microservice.patientmanagement.web.rest.ReferralPatientMasterController.getReferralPatientMasters() with result = <200 OK,com.erx.microservice.patientmanagement.service.referralpatientmaster.getreferralpatientmaster.GetReferralPatientMasterServiceResponse@3e10439f,{}>
